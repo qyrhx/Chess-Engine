@@ -9,7 +9,6 @@ string(CONCAT CMAKE_CXX_FLAGS
   " -Wall -Wextra")
 
 set(BUILD_SHARED_LIBS OFF)
-set(BUILD_TESTING OFF)
 
 add_subdirectory("deps/raylib-4.2.0")
 add_subdirectory("deps/fmt")
