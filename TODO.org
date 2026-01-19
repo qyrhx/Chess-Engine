@@ -1,0 +1,23 @@
+* Chess Engine
+
+** DONE Correct move generation
+*** DONE Castling
+*** DONE Checks
+*** DONE Pins
+*** DONE En passant
+*** DONE Take piece when en passant is played
+*** DONE BUG: En passant discovered check
+*** DONE Promotions
+*** DONE Checkmake & Draw
+*** DONE 50 move rule
+*** DONE Draw by repetition
+
+* DONE Tests
+*** DONE Basic Tests
+*** DONE Extended Tests
+
+* TODO Search & Evaluation
+*** DONE MinMax
+*** DONE Alpha-Beta Pruning
+*** TODO Transposition Table
+*** TODO More optimisations, move gen is still slow, idk what to do lol
