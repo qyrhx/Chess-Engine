@@ -17,3 +17,22 @@ The engine works with GCC, Clang or ICC (tested only with GCC though).
 # Note
 The source code of [Stockfish](https://github.com/official-stockfish/Stockfish) was a great help
 to build this engine, so special thanks to the developer(s) of Stockfish.
+
+# Features
+## Engine
+
+- Bitboard-based board representation (Bitboard/uint64_t, one bitboard per piece-color combo)
+- Legal move generation (gen_board_legal_moves, pin handling via limit_moves_of_pinned_pieces)
+- Zobrist hashing for position keys, with draw-by-repetition detection
+- Alpha-beta search with configurable depth (search(b, depth, stop_search))
+- Evaluation function: material + piece-square tables (mention tapered eval, bishop pair, pawn structure, rook files if/when you add them)
+- Castling, en passant, promotion handling
+- 50-move rule tracking
+
+## GUI
+
+- Raylib-based graphical interface
+- Click-to-move piece selection with legal-move highlighting
+- Promotion piece selection prompt
+- Background-threaded search so the UI doesn't block while the engine thinks
+- Live evaluation display
