@@ -22,9 +22,9 @@ to build this engine, so special thanks to the developer(s) of Stockfish.
 ## Engine
 
 - Bitboard-based board representation (Bitboard/uint64_t, one bitboard per piece-color combo)
-- Legal move generation (gen_board_legal_moves, pin handling via limit_moves_of_pinned_pieces)
+- Legal move generation, tested with PERFT results
 - Zobrist hashing for position keys, with draw-by-repetition detection
-- Alpha-beta search with configurable depth (search(b, depth, stop_search))
+- Alpha-beta search with configurable depth
 - Evaluation function: material + piece-square tables (mention tapered eval, bishop pair, pawn structure, rook files if/when you add them)
 - Castling, en passant, promotion handling
 - 50-move rule tracking
